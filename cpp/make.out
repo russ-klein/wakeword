@@ -1,0 +1,13 @@
+g++ -g -c cat_access.cpp -o cat_access.o -I . -I ../include -I /wv/hlsb/CATAPULT/2022.1/PRODUCTION/aol/Mgc_home/shared/include  -I ~/catapult/include  -std=c++11 -D HOST -D FIXED_POINT -D ESP_VERSION 
+g++ -g -c catapult_accel.cpp -o catapult_accel.o -I . -I ../include -I /wv/hlsb/CATAPULT/2022.1/PRODUCTION/aol/Mgc_home/shared/include  -I ~/catapult/include  -std=c++11 -D HOST -D FIXED_POINT -D ESP_VERSION 
+g++ -g -c conv_2d.cpp -o conv_2d.o -I . -I ../include -I /wv/hlsb/CATAPULT/2022.1/PRODUCTION/aol/Mgc_home/shared/include  -I ~/catapult/include  -std=c++11 -D HOST -D FIXED_POINT -D ESP_VERSION 
+g++ -g -c dense.cpp -o dense.o -I . -I ../include -I /wv/hlsb/CATAPULT/2022.1/PRODUCTION/aol/Mgc_home/shared/include  -I ~/catapult/include  -std=c++11 -D HOST -D FIXED_POINT -D ESP_VERSION 
+g++ -g -c mfcc.cpp -o mfcc.o -I . -I ../include -I /wv/hlsb/CATAPULT/2022.1/PRODUCTION/aol/Mgc_home/shared/include  -I ~/catapult/include  -std=c++11 -D HOST -D FIXED_POINT -D ESP_VERSION 
+g++ -g -c read_wave.cpp -o read_wave.o -I . -I ../include -I /wv/hlsb/CATAPULT/2022.1/PRODUCTION/aol/Mgc_home/shared/include  -I ~/catapult/include  -std=c++11 -D HOST -D FIXED_POINT -D ESP_VERSION 
+g++ -g -o wakeword main.o cat_access.o catapult_accel.o conv_2d.o dense.o mfcc.o read_wave.o
+g++ -g -c power_spectrum.cpp -o power_spectrum.o -I . -I ../include -I /wv/hlsb/CATAPULT/2022.1/PRODUCTION/aol/Mgc_home/shared/include  -I ~/catapult/include  -std=c++11 -D HOST -D FIXED_POINT -D ESP_VERSION 
+g++ -g -o wakeword main.o cat_access.o catapult_accel.o conv_2d.o dense.o mfcc.o read_wave.o power_spectrum.o
+g++ -g -c power_spectrum.cpp -o power_spectrum.o -I . -I ../include -I /wv/hlsb/CATAPULT/2022.1/PRODUCTION/aol/Mgc_home/shared/include  -I ~/catapult/include  -std=c++11 -D HOST -D FIXED_POINT -D ESP_VERSION 
+g++ -g -o wakeword main.o cat_access.o catapult_accel.o conv_2d.o dense.o mfcc.o read_wave.o power_spectrum.o
+g++ -g -c power_spectrum.cpp -o power_spectrum.o -I . -I ../include -I /wv/hlsb/CATAPULT/2022.1/PRODUCTION/aol/Mgc_home/shared/include  -I ~/catapult/include  -std=c++11 -D HOST -D FIXED_POINT -D ESP_VERSION 
+g++ -g -o wakeword main.o cat_access.o catapult_accel.o conv_2d.o dense.o mfcc.o read_wave.o power_spectrum.o
